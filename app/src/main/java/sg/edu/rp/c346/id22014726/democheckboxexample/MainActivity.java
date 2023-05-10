@@ -31,10 +31,10 @@ TextView tvShow;
                 Toast.makeText(MainActivity.this, "Button Click", Toast.LENGTH_LONG).show();
                 if (cbEnabled.isChecked()) {
                     double pay = calcPay(100, 20);
-                    tvShow.setText("The discount is given.");
+                    tvShow.setText("The discount is given. You need to pay " + pay);
                 } else {
                     double pay = calcPay(100, 0);
-                    tvShow.setText("The discount is not given.");
+                    tvShow.setText("The discount is not given. You need to pay " + pay);
                 }
 
             }
